@@ -19,13 +19,15 @@
   },
   "dependencies": {
     "bluebird": "^3.5.3",
+    "colyseus": "^0.9.26",
     "ramda": "^0.26.1"
   },
   "devDependencies": {
+    "@gamestdio/timer": "^1.2.0",
     "@types/bluebird": "^3.5.25",
     "@types/chai": "^4.1.7",
     "@types/debug": "^0.0.31",
-    "@types/node": "^10.12.18",
+    "@types/node": "^8.10.39",
     "@types/ramda": "^0.25.47",
     "chai": "^4.2.0",
     "debug": "^4.1.1",

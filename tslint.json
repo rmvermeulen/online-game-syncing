@@ -13,6 +13,7 @@
         "grouped-imports": true
       }
     ],
-    "interface-name": false
+    "interface-name": false,
+    "radix": false
   }
 }
