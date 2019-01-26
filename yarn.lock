@@ -638,6 +638,21 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@gamestdio/clock@^1.1.0":
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/@gamestdio/clock/-/clock-1.1.9.tgz#77ec0c011391fbbfdcb4f32112429536fd8680cb"
+  integrity sha1-d+wMAROR+7/ctPMhEkKVNv2GgMs=
+
+"@gamestdio/signals@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@gamestdio/signals/-/signals-1.0.0.tgz#3f7501a322b9b7c5d7f105f81d0f638d4e0357a4"
+  integrity sha512-EPWA3IkJ+xDT1K/xV53m5N4h/g4qzpf4NG6GustZLT1wp3T59YPonGQ9LLl3+YMNwSNj0yawX4wUpOnuQJ96Ug==
+
+"@gamestdio/state-listener@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@gamestdio/state-listener/-/state-listener-3.1.0.tgz#d39fc5f107e58b536ac6e8477ed141ed7421788a"
+  integrity sha512-FEKarKXEeXvCrzilFw9ANOxKkdtFfHXYqJNCaYEhTV+13x02o7HXDFetJAoQCAT9AVgiHUd3Ylo5mOukAegPoA==
+
 "@gamestdio/timeline@^0.3.5":
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/@gamestdio/timeline/-/timeline-0.3.5.tgz#35ffbe1621535b41dfb5d5009c4c52301bbb1fc6"
@@ -651,6 +666,11 @@
   integrity sha512-YkqtnY+9tcuWDczq4o6Pe5T49/1xO1Ff/ZMZKhbF6V5JTQkBv0nnMmmw8BPVhtPjeRFk5XRD8sGUmS5BsDuhCw==
   dependencies:
     clock.js "^1.1.5"
+
+"@gamestdio/websocket@^0.3.0":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@gamestdio/websocket/-/websocket-0.3.1.tgz#7b2bc07a0a738f04f73a632bd00b208ccad5b80a"
+  integrity sha512-SzWnXRSCfkOEdHR8gYT7tT9NeIqeW9nxkoiUCXmtZY0s9D7uBMFGxKVLFxngfK586NC40sZo9/xuVmPqDK4Jeg==
 
 "@iamstarkov/listr-update-renderer@0.4.1":
   version "0.4.1"
@@ -771,6 +791,13 @@
   version "0.25.47"
   resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.47.tgz#904f2ee46149af42902fe7dc01867e32798e8b37"
   integrity sha512-+ffSU83+PR4/cZtNTkUcFkg70sK4GePle7p5h05bQ37ycPumOx/TBpU52bt36GKDlds6tCqXheqPvgC52MMLug==
+
+"@types/redis@^2.8.10":
+  version "2.8.10"
+  resolved "https://registry.yarnpkg.com/@types/redis/-/redis-2.8.10.tgz#27130c3bcc803265a51cb978538ca330dff2e748"
+  integrity sha512-X0NeV3ivoif2SPsmuPhwTkKfcr1fDJlaJIOyxZ9/TCIEbvzMzmZlstqCZ5r7AOolbOJtAfvuGArNXMexYYH3ng==
+  dependencies:
+    "@types/node" "*"
 
 "@types/semver@^5.5.0":
   version "5.5.0"
@@ -1862,6 +1889,18 @@ colors@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
   integrity sha1-FopHAXVran9RoSzgyXv6KMCE7WM=
+
+colyseus.js@^0.9.16:
+  version "0.9.16"
+  resolved "https://registry.yarnpkg.com/colyseus.js/-/colyseus.js-0.9.16.tgz#aeda61025fc2c20398d51dda76892d2e4d1bbe5a"
+  integrity sha512-UZQismI87nFOshlglaBv3npem2QkWcw/Lu770CTJUit18BZLmNxVvF8S+7FpZP2Ro3RV2qDdr2llZL607E8iyw==
+  dependencies:
+    "@gamestdio/clock" "^1.1.0"
+    "@gamestdio/signals" "^1.0.0"
+    "@gamestdio/state-listener" "^3.1.0"
+    "@gamestdio/websocket" "^0.3.0"
+    fossil-delta "^1.0.0"
+    notepack.io "^2.1.3"
 
 colyseus@^0.9.26:
   version "0.9.26"
@@ -3074,7 +3113,7 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-fossil-delta@^1.0.1:
+fossil-delta@^1.0.0, fossil-delta@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/fossil-delta/-/fossil-delta-1.0.2.tgz#a3e9545d5fd5e1b317dca38f0c852baa80b13b89"
   integrity sha512-fkgQUnBaJjhDq0DN1ajBlWWRH99NQgwVoReMEr0oXLqYXAx8X9mD5gGaoTYDdVVbLJYsMNrnkJ028Ld0UgWrGA==
@@ -5206,7 +5245,7 @@ normalize-url@^3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
 
-notepack.io@^2.2.0:
+notepack.io@^2.1.3, notepack.io@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/notepack.io/-/notepack.io-2.2.0.tgz#d7ea71d1cb90094f88c6f3c8d84277c2d0cd101c"
   integrity sha512-9b5w3t5VSH6ZPosoYnyDONnUTF8o0UkBw7JLA6eBlYJWyGT1Q3vQa8Hmuj1/X6RYvHjjygBDgw6fJhe0JEojfw==
