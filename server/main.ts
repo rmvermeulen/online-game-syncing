@@ -22,6 +22,7 @@ console.log(`server listening on localhost:${port}`);
     .on('leave', (room: Room, client: Client) =>
       console.log(client.id, 'left', room.roomId),
     );
+  handler.on('error', console.error);
 })().catch(console.error);
 
 setInterval(
